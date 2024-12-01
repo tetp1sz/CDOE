@@ -12,5 +12,5 @@ gcc  main.c  intro.c  calc_dist.c  world_side.c
 
 ```
 
-📨 _My Discord:_ tetp1sz
+📨 _My Discord:_ tetp1sz<br>
 📨 _My telegram:_ @tap0kdeda88
