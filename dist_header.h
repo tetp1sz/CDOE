@@ -7,6 +7,7 @@
 
 
 #ifdef _WIN32
+    #include <Windows.h>
     #define CLRSCR system("cls")
     #define F_S 0x384        // sound frequency (Hz)
     #define S_L 0x3e8        // sound length (ms)
