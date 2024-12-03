@@ -8,11 +8,13 @@
 
 #ifdef _WIN32
     #include <Windows.h>
+    #include <conio.h>
     #define CLRSCR system("cls")
     #define F_S 0x384        // sound frequency (Hz)
     #define S_L 0x3e8        // sound length (ms)
     void menuAudioIntro();
 #elif __unix__
+    #include <ncurses.h>
     #define CLRSCR system("clear")
 #endif
 
