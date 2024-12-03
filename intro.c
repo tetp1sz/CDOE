@@ -1,4 +1,3 @@
-#include <Windows.h>
 #include <stdio.h>
 #include "dist_header.h"
 
