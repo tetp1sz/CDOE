@@ -6,15 +6,20 @@
 #define _USE_MATH_DEFINES
 
 
+typedef char bool;
+
+
 #ifdef _WIN32
     #include <Windows.h>
     #include <conio.h>
     #define CLRSCR system("cls")
+    #define GETCH _getch()
     #define F_S 0x384        // sound frequency (Hz)
     #define S_L 0x3e8        // sound length (ms)
     void menuAudioIntro();
 #elif __unix__
-    #include <ncurses.h>
+    #include <curses.h>
+    #define GETCH getch()
     #define CLRSCR system("clear")
 #endif
 

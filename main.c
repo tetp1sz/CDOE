@@ -42,7 +42,7 @@ int main() {
             calculateDistance(degToRad(Fa), degToRad(Fb), degToRad(La), degToRad(Lb))
         );
 
-        uint8_t keyNumber = _getch();
+        uint8_t keyNumber = GETCH;
         if(keyNumber == ESC_KEY) {
             CLRSCR;
             break;
