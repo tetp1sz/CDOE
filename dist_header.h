@@ -19,7 +19,7 @@ typedef char bool;
     void menuAudioIntro();
 #elif __unix__
     #include <curses.h>
-    #define GETCH wgetch()
+    #define GETCH getch()
     #define CLRSCR system("clear")
 #endif
 

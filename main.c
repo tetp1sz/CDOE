@@ -13,7 +13,7 @@ int main() {
     #ifdef _WIN32
         menuAudioIntro();
     #elif __unix__
-        _getch();
+        GETCH;
     #endif
 
     while(1) {
