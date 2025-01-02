@@ -2,25 +2,27 @@
 
 
 #define EARTH_RADIUS 0x18e3
-#define ESC_KEY 0x1b
+#define ESC_KEY      0x1b
 #define _USE_MATH_DEFINES
+#define TRUE         0x1
+#define FALSE        0x0
 
 
-typedef char bool;
+typedef uint8_t boolean;
 
 
 #ifdef _WIN32
     #include <Windows.h>
     #include <conio.h>
     #define CLRSCR system("cls")
-    #define GETCH _getch()
-    #define F_S 0x384        // sound frequency (Hz)
-    #define S_L 0x3e8        // sound length (ms)
+    #define GETCH  _getch()
+    #define F_S    0x384        // sound frequency (Hz)
+    #define S_L    0x3e8        // sound length (ms)
     void menuAudioIntro();
-#elif __unix__
+/* #elif __unix__
     #include <curses.h>
-    #define GETCH getch()
-    #define CLRSCR system("clear")
+    #define GETCH  getch()
+    #define CLRSCR system("clear") */
 #endif
 
 

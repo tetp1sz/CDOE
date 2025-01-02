@@ -12,11 +12,11 @@ int main() {
     menuTextIntro();
     #ifdef _WIN32
         menuAudioIntro();
-    #elif __unix__
-        GETCH;
+    /* #elif __unix__
+        GETCH; */
     #endif
 
-    while(1) {
+    while(TRUE) {
         CLRSCR;
         printf("\t\t\tCALCULATING DISTANCE ON EARTH\n");
         printf("\n[?] Enter the latitude of the first object: ");

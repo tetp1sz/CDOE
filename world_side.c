@@ -5,17 +5,17 @@
 
 uint8_t choice;
 
-bool choiceIsCorrect(uint8_t choice) {
+boolean choiceIsCorrect(uint8_t choice) {
     if(choice != 1 && choice != 2) {
         printf("\n[!] Invalid choice...\n\n");
-        return 0;
+        return FALSE;
     }
     else 
-        return 1;
+        return TRUE;
 }
 
 uint8_t referenceLatitude() {
-    while(1) {
+    while(TRUE) {
         printf("[?] Select latitude:\n\t1. Nothern\n\t2. South\n\t> ");
         scanf("%d", &choice);
 
@@ -27,7 +27,7 @@ uint8_t referenceLatitude() {
 }
 
 uint8_t referenceLongitude() {
-    while(1) {
+    while(TRUE) {
         printf("[?] Select longitude:\n\t1. Western\n\t2. Eastern\n\t> ");
         scanf("%d", &choice);
 
